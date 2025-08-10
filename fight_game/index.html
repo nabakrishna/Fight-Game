@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Python Fighting Game</title>
+    <link rel="stylesheet" href="gamestyles.css" />
+</head>
+<body>
+    <header class="hero">
+        <h1>Python Fighting Game</h1>
+        <p>2D local multiplayer fighter made with Python + Pygame</p>
+        <button id="playBtn">Play</button>
+    </header>
+
+    <main class="content">
+        <section>
+            <h2>How to Play</h2>
+            <div class="grid">
+                <div>
+                    <h3>Player 1</h3>
+                    <ul>
+                        <li>Move: A / D</li>
+                        <li>Jump: W</li>
+                        <li>Crouch: S</li>
+                        <li>Dash: Left Shift</li>
+                        <li>Block: H</li>
+                        <li>Light: F</li>
+                        <li>Heavy: G</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Player 2</h3>
+                    <ul>
+                        <li>Move: Left / Right</li>
+                        <li>Jump: Up</li>
+                        <li>Crouch: Down</li>
+                        <li>Dash: Right Shift</li>
+                        <li>Block: ; (Semicolon)</li>
+                        <li>Light: K</li>
+                        <li>Heavy: L</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Goal: Reduce the opponent's health to 0 or have more health when the timer ends. Best of 3 rounds.</p>
+        </section>
+
+        <section id="gameSection" class="hidden">
+            <h2>Game</h2>
+            <div id="gameContainer">
+                <iframe id="gameFrame" title="Game" loading="lazy"></iframe>
+            </div>
+            <p class="hint">If the game is blank, wait a few seconds for WebAssembly to load.</p>
+        </section>
+    </main>
+
+    <footer>
+        <small>Built with Python, Pygame, and pygbag.</small>
+    </footer>
+
+    <script src="gamescript.js"></script>
+</body>
+</html>
