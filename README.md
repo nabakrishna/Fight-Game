@@ -22,6 +22,25 @@ A 2D local multiplayer fighting game built with Python and Pygame. This project 
 | **Block** | H | ; (Semicolon) |
 | **Dash** | Left Shift | Right Shift |
 
+## 📂 Project Structure
+```bash
+├── build/                      # Generated build directory (created by pygbag)
+│   └── web/                    # Contains the deployable web version        
+│   │   └── favilon.png         # Game icon
+│   └── web-cahe/               # Internal cache for the web builder (pygbag)
+│       └──489f...29eca.tmpl    # Go template file
+│       └──38ee...28ed.png      #
+│
+├──fight_game/                  # Main source code directory
+├── main.py                     # Core game loop and logic
+├── script.js                   # Frontend JavaScript for web integration
+├── styles.css                  # Styling for the web container
+├── requirements.txt            # Python dependencies (pygame, pygbag)
+├── version.json                # Versioning and build metadata
+├── fight_game.apk              # Local package archive
+├── favicon.png                 # Game icon
+└── index.html                  # Template for web build
+```
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
@@ -44,4 +63,5 @@ To run the game in a browser using pygbag:
 pygbag .
 ```
 Then open http://localhost:8000 in your browser.
+
 
