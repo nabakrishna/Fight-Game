@@ -1,0 +1,11 @@
+{
+  "name": "python-fighting-game",
+  "version": "1.0.0",
+  "description": "A 2D local multiplayer fighting game made with Python and Pygame.",
+  "author": "Naba Krishna Hazarika",
+  "license": "MIT",
+  "build": {
+    "engine": "pygame",
+    "web_packer": "pygbag"
+  }
+}
